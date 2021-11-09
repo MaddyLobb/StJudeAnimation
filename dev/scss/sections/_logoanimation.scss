@@ -1,0 +1,23 @@
+#animation{
+
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+
+
+    display: grid;
+    grid-template-areas: ". animation .";
+    grid-template-columns: auto 50% auto;
+
+    >div{
+
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        grid-area: animation;
+    }
+
+}
