@@ -2188,7 +2188,7 @@
   "projectAttributes" : {
     "creationDate" : 654009680.036273,
     "displayValue" : "StJudeAnimation",
-    "displayValueWasSetByUser" : 0,
+    "displayValueWasSetByUser" : 1,
     "iconImageName" : "brackets-pale",
     "iconImageWasSetByUser" : 0
   },
