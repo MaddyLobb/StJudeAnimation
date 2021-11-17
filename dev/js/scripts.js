@@ -21,10 +21,10 @@ function logoletters(){
     const tl = gsap.timeline();
 
     tl.from("#s",{duration: .75, alpha:0})
-      .from("#t",{duration: .75, alpha:0})
-      .from("#j",{duration: .75, alpha:0})
-      .from("#c",{duration: .75, alpha:0})
-      .from("#h",{duration: .75, alpha:0});
+      .from("#t",{duration: .75, alpha:0},"-=30%")
+      .from("#j",{duration: .75, alpha:0},"-=30%")
+      .from("#c",{duration: .75, alpha:0},"-=30%")
+      .from("#h",{duration: .75, alpha:0},"-=30%");
 
     return tl;
 }
