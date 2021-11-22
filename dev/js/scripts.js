@@ -1,7 +1,9 @@
 import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 
-gsap.registerPlugin(MotionPathPlugin);
+
+gsap.registerPlugin(MotionPathPlugin,ScrambleTextPlugin);
 
 
 let mainTL = gsap.timeline();
@@ -47,7 +49,8 @@ function stjude(){
 
     const tl = gsap.timeline();
 
-    tl.from("#stjude",{duration: 2, x:360});
+    tl.from("#stjude",{duration: 2, x:360})
+    .to("#tagline", {duration: 2, scrambleText:{text:"Finding cures. Saving children.", chars:"sjch" ,revealDelay:.5, tweenLength:false, speed:0.4}});
 
     return tl;
 }
