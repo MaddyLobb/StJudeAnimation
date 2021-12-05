@@ -35,12 +35,12 @@ function sllmoving(){
 
     const tl = gsap.timeline();
 
-    tl.to("#square",{duration: 2, x: -188},"same")
-      .to("#s",{duration: 2, x: -188},"same")
-      .to("#t",{duration: 2, x: -188},"same")
-      .to("#j",{duration: 2, x: -188},"same")
-      .to("#c",{duration: 2, x: -188},"same")
-      .to("#h",{duration: 2, x: -188},"same");
+    tl.to("#square",{duration: 2, x: -188},"same1")
+      .to("#s",{duration: 2, x: -188},"same1")
+      .to("#t",{duration: 2, x: -188},"same1")
+      .to("#j",{duration: 2, x: -188},"same1")
+      .to("#c",{duration: 2, x: -188},"same1")
+      .to("#h",{duration: 2, x: -188},"same1");
 
     return tl;
 }
@@ -49,8 +49,8 @@ function stjude(){
 
     const tl = gsap.timeline();
 
-    tl.from("#stjude",{duration: 2, x:360})
-    .to("#tagline", {duration: 2, scrambleText:{text:"Finding cures. Saving children.", chars:"sjch" ,revealDelay:.5, tweenLength:false, speed:0.4}});
+    tl.from("#stjude",{duration: 2, x:360},"same2")
+      .to("#tagline", {duration: 2, scrambleText:{text:"Finding cures. Saving children.", chars:"sjch" ,revealDelay:.5, tweenLength:false, speed:0.4}},"same2");
 
     return tl;
 }
